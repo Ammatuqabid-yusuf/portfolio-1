@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="response.css" />
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<!-- <img src="img/logo.jpg" alt="Logo" class="logo" />
+					  -->
+					<div class="logo">
+						<span class="la">A</span>
+						<span class="lb">Y</span>
+						<span class="lc">k</span>
+					</div>
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#service">Services</a></li>
+						<li><a href="#project">Project</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<ion-icon
+							name="close-outline"
+							class="fas"
+							onclick="closemenu()"
+						></ion-icon>
+					</ul>
+					<!-- handbarger -->
+					<ion-icon
+						name="menu-outline"
+						class="fas"
+						onclick="openmenu()"
+					></ion-icon>
+				</nav>
+
+				<div class="header-text">
+					<div class="one">
+						<p>Frontend Designer</p>
+						<h1>Hi, I'm <span>Ammatuqabid </span><br />Yusuf Kabir</h1>
+
+						<div class="btn-1">
+							<a href="resume-example.pdf.pdf" download>Download CV</a>
+						</div>
+					</div>
+					<div class="two">
+						<img src="img/back.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- About section -->
+		<div id="about">
+			<div class="container">
+				<h1 class="sub-title">About Me</h1>
+				<div class="row">
+					<div class="about-col-1">
+						<img src="img/backgoroud.jpg" alt="" />
+					</div>
+					<div class="about-col-2">
+						<p>
+							Hello! I’m Ammatuqabid Yusuf Kabir, a dedicated frontend developer
+							with a passion for creating dynamic and responsive user
+							experiences. I hold National Diploma from Kaduna Polytechnic,
+							where I developed a strong technical foundation in web development
+							and interactive design. My journey in frontend development began
+							with a fascination for how digital interfaces come to life,
+							leading me to master core technologies and frameworks.
+						</p>
+
+						<div class="tab-title">
+							<p
+								class="tab-links active-link"
+								onclick="opentab('skills', event)"
+							>
+								Skills
+							</p>
+							<p class="tab-links" onclick="opentab('experience', event)">
+								Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education', event)">
+								Education
+							</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>Frontend Developer</span> <br />Designing website</li>
+								<li>
+									<span>Graphic Designer</span> <br />Designing a graphic
+									overlay
+								</li>
+							</ul>
+						</div>
+
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li>
+									<span>2024 - current</span> <br />Frontend development at
+									Techware Academy
+								</li>
+								<li>
+									<span>2023</span> <br />Graphic Design At Kaduna Polytechnic
+								</li>
+							</ul>
+						</div>
+
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>2024</span> <br />National Diploma At Kaduna Polytechnic
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- services -->
+		<div id="service">
+			<div class="container">
+				<h1 class="sub-title">My Services</h1>
+				<div class="services-list">
+					<div>
+						<ion-icon name="code-slash-outline" class="ico"></ion-icon>
+						<h2>Web Design</h2>
+						<p>
+							I design user interfaces that are visually appealing and
+							user-centered, with a strong focus on enhancing user experience.
+							My design process includes understanding user needs, creating
+							wireframes, and delivering high-fidelity prototypes that align
+							with the client’s brand.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+					<div>
+						<ion-icon name="logo-designernews" class="ico"></ion-icon>
+
+						<h2>Graphic Designer</h2>
+						<p>
+							Offering professional graphic design services, including logo
+							creation, branding, and visual assets that make a statement. With
+							a background in graphic design, I bring a creative edge to every
+							project, helping brands tell their story visually.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Project -->
+		<div id="project">
+			<div class="container">
+				<h1 class="sub-title">Project</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="img/project1.PNG" alt="project img" />
+						<div class="layer">
+							<h3>Omnifood website</h3>
+							<p>
+								Omnifood is a modern, health-focused meal delivery website
+								offering customizable, nutritious meal plans delivered straight
+								to your door.
+							</p>
+							<a href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									width="12"
+									height="12"
+									fill="currentColor"
+								>
+									<path
+										d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="img/project2.PNG" alt="project img" />
+						<div class="layer">
+							<h3>E-commerce website</h3>
+							<p>
+								An e-commerce website is an online platform that showcase
+								products and allows customers to select, and purchase items
+								directly through a secure, user-friendly interface.
+							</p>
+							<a href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									width="12"
+									height="12"
+									fill="currentColor"
+								>
+									<path
+										d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="img/project3.PNG" alt="project img" />
+						<div class="layer">
+							<h3>Lisbon Chair website</h3>
+							<p>
+								The Lisbon Chair is a modern, comfortable chair with a sleek,
+								minimalist design, perfect for any stylish space.
+							</p>
+							<a href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									width="12"
+									height="12"
+									fill="currentColor"
+								>
+									<path
+										d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn">See more</a>
+			</div>
+		</div>
+
+		<!-- contact -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p>
+							<ion-icon name="mail-outline" class="icon"></ion-icon>
+							<a href="mailto:examplemail.com">yusufammatuqabid@gmail.com </a>
+						</p>
+						<p>
+							<ion-icon name="call-outline" class="icon"></ion-icon>
+							<a href="">(+234)8026550883</a>
+						</p>
+						<div class="social-icon">
+							<a href="https://www.linkedin.com/in/ammatuqabid-yusuf-14a659334/"
+								><ion-icon name="logo-linkedin"></ion-icon
+							></a>
+							<a href="https://github.com/Ammatuqabid-yusuf"
+								><ion-icon name="logo-github"></ion-icon>
+							</a>
+						</div>
+					</div>
+					<div class="contact-right">
+						<form id="contactForm">
+							<input
+								type="text"
+								name="Name"
+								placeholder="Enter your Name"
+								required
+							/>
+							<input
+								type="email"
+								name="Email"
+								placeholder="Enter your email"
+								required
+							/>
+							<textarea
+								name="Message"
+								rows="6"
+								placeholder="Your Message"
+							></textarea>
+							<div>
+								<button type="button" class="btn btn-2">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>
+					Copyright © 2024 Ammatuqabid yusuf Kabir.
+					<ion-icon name="heart-outline" class="icon"></ion-icon> All Rights
+					Reserved.
+				</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
