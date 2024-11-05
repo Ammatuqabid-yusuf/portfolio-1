@@ -123,16 +123,121 @@
 	}
 }
 @media only screen and (max-width: 320px) {
+	* {
+		font-size: 14px;
+	}
+
+	body {
+		padding: 0 1rem;
+	}
+
+	/* Header */
+	#header {
+		height: auto; 
+		padding: 1rem 0;
+	}
+
+	.container {
+		padding: 1rem 5%; 
+	}
+
 	.header-text {
-		justify-content: center;
-		align-content: center;
+		font-size: 2rem; 
+		gap: 1rem; 
+	}
+
+	.one {
+		max-width: 100%; 
+	}
+
+	.two {
 		text-align: center;
 	}
-	#about {
-		justify-content: center;
-		align-items: center;
+
+	/* Logo */
+	.logo {
+		position: relative;
+		font-family: "Cinzel", serif;
+		font-weight: bold;
+		font-size: 50px; 
 	}
-	.sub-title {
-		text-align: center;
+
+	.logo .la {
+		left: 10px;
+		bottom: 15px; 
+	}
+
+	.logo .lb {
+		left: 20px; 
+		bottom: 7px;
+	}
+
+	.logo .lc {
+		left: 10px;
+		top: -8px; 
+	}
+
+	.two img {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	nav ul li {
+		margin: 0.5rem 1rem;
+	}
+
+	.header-text h1 {
+		font-size: 1.8rem; 
+	}
+	.header-text span {
+		font-size: 1.6rem;
+	}
+	.btn-1 a {
+		padding: 12px 30px;
+		font-size: 16px; 
+	}
+
+	.services-list {
+		grid-template-columns: 1fr; 
+		grid-gap: 20px; 
+	}
+
+	.services-list div {
+		padding: 20px; 
+	}
+
+	.work-list {
+		grid-template-columns: 1fr; 
+		grid-gap: 20px;
+	}
+
+	.work img {
+		height: 15rem;
+	}
+
+	.contact-left,
+	.contact-right {
+		flex-basis: 100%; 
+	}
+
+	.contact-left p {
+		font-size: 16px; 
+	}
+
+	.social-icon a {
+		font-size: 25px; 
+	}
+
+	form input,
+	form textarea {
+		font-size: 16px; 
+	}
+
+	.btn-2 {
+		padding: 12px 40px;
+	}
+
+	.copyright {
+		font-size: 12px; 
 	}
 }
